@@ -1,4 +1,4 @@
-export default {
+const data = {
     products: [
       {
         name: 'Shirt',
@@ -8,6 +8,7 @@ export default {
         rating: 4.5,
         numberOfReviews: 10,
       },
+
       {
         name: 'Shirt',
         imageUrl: '/images/d1.jpg',
@@ -34,3 +35,5 @@ export default {
       },
     ],
   };
+  
+  export default data;

@@ -2,6 +2,9 @@ import './index.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
+import Orders from './Orders/Orders';
+import OrderDetail from './Orders/OrderDetail'; 
+
 
 export default function App() {
   const openMenu = () => {
@@ -24,7 +27,8 @@ export default function App() {
         </div>
         <div className="header-links">
           <Link to = "/">Home</Link>
-          <Link to = "/catelog">Catalog</Link>
+          <Link to = "/catalog">Catalog</Link>
+          <Link to = "/orders">Orders</Link>
         </div>
       </header>
       <aside className="sidebar">
@@ -40,11 +44,15 @@ export default function App() {
         </ul>
       </aside>
       <main className="main">
-        <Routes>
-          <Route path = "/" element = {<Home/>}/>
-          <Route path = "/catelog" element = {<Products/>}/>
-        </Routes>
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Catalog" element={<Products />} />
+        <Route path="/orders" element={<Orders />}></Route>
+        <Route path="/orders" element={<OrderDetail/>} />
+      </Routes>
       </main>
+    
     <footer className="footer">
       &copy; 2025 Chasing Rain
     </footer>
