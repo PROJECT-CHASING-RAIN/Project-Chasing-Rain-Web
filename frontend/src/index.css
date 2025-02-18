@@ -189,12 +189,9 @@ tbody > tr:nth-child(odd) {
   border-top: 0.3rem #ff8000 solid;
   color: #ff8000;
 }
-
-
-
-
-
-
+.unshipped{
+  color:red;
+}
 .form {
   display: flex;
   justify-content: center;
