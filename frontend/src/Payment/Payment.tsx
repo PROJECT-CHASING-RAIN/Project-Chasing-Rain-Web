@@ -28,9 +28,15 @@ function PaymentScreen() {
                   type="radio"
                   name="paymentMethod"
                   id="paymentMethod"
-                  value="bitcoin"
+                  value="paypal"
                 />
                 <label htmlFor="paymentMethod">Bitcoin</label>
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  id="paymentMethod"
+                  value="paypal"
+                />
               </div>
             </li>
             <li>
